@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<empresas grupo="Proeduca">
+<ite telefono="+34 91 787 39 91" web="https://institutotecnologico.edix.com">
+<nombre>Instituto Tecnológico Edix</nombre>
+<directiva>
+<nombre rol=" director" despacho="Numero 31, 3ª Planta, Edificio A">Chon</nombre>
+<nombre rol=" Jefe de Estudios" despacho="Numero 27, 2ª Planta, Edificio B">Chon</nombre>
+</directiva>
+<formacion>
+<nombre id="ASIR" grado="Superior" año_decreto="2009">Administración de Sistemas Informáticos en Red</nombre>
+<nombre id="DAW" grado="Superior" año_decreto="2010">Desarrollo de Aplicaciones Web</nombre>
+<nombre id="DAM" grado="Superior" año_decreto="2010">Desarrollo de Aplicaciones Multiplataforma</nombre>
+</formacion>
+<profesores>
+<nombre id="1">Félix</nombre>
+<nombre id="2">Raúl</nombre>
+<nombre id="3">Raquel</nombre>
+<nombre id="4">Tomás</nombre>
+</profesores>
+</ite>
+</empresas>

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif;     
+    }
+
+header {
+    
+	padding-top: 1%;
+	width:100%;
+    height: 150px;
+    background-image: url(img/headerEdix.png);
+    background-size:cover;
+    z-index: 3;
+    position: relative;
+    
+}
+	
+main {
+    margin-left:auto;
+	margin-right:auto;
+	width:90%;
+} 
+
+section {
+    margin-left:auto;
+	margin-right:auto;
+	width:90%;
+    height:100%;
+    background-image: url(img/fondoEdix.png);  
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size:cover;
+}
+    
+footer {
+    width: 100%;
+    height: 170px;
+    background-image: url(img/headerEdix.png);
+    background-size:cover; 
+    color: #fff;
+    text-align: center;
+    
+}
+
+a:link {
+    color: rgb(147, 89, 241);
+} 
+
+h1 {
+    color: #fff;
+}
+
+h3 {
+    color: rgb(19, 195, 248);
+}
+
+#head1 {
+    margin-top:2%;
+    margin-left:5%;
+	margin-bottom:1%;
+    float: left;
+}
+
+#head2 {
+    margin-top:3%;
+    margin-right:20%;
+	margin-bottom:1%;
+    float: right;
+}
+
+
+table {
+    font-weight: bold;
+    font-size: larger;
+    width: 40%;
+    margin:10px auto;
+    margin-left:auto;
+	margin-right:auto;
+    margin-top: 10px;
+    text-align: center ;
+    margin-bottom: 30px;
+    
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid  rgb(19, 195, 248);
+ }
+
+ th {
+    
+    background-color: rgb(168, 165, 165);
+ }
+ td {
+    
+    background-color: rgb(255, 255, 255);
+ }
+
+ caption {
+    margin-top: 20px; 
+    padding: 0.3em;
+    color: rgb(5, 5, 5);
+    background: rgb(19, 195, 248);
+
+ }     
+
+ ol {
+
+    color:white;
+ }
+
+input[type=text], select, textarea {
+    
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box; 
+    margin-top: 5px;
+    margin-bottom: 12px;
+    background-color:  rgb(184, 185, 185);
+}
+      
+input[type=submit] {
+    background-color: #903;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+      
+input[type=submit]:hover {
+    background-color: rgb(32, 90, 39);
+}
+      
+   
+.contenedor_formulario {
+    border: 5px solid rgb(5, 32, 119);
+    color:rgb(92, 6, 109);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    background-image: url(img/fondoEdix2.png);
+    background-size:contain;  
+    padding: 12px;
+}
+
+
+/* Menú alargado en nav */
+
+#menu1{
+    width: 100%;
+    z-index: 2;
+       
+}
+
+#menu1 ul{
+    list-style: none;
+    position: relative;
+}
+
+#menu1 ul li{
+    
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#menu1 ul li a{
+    
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+    text-decoration: none;
+
+    
+}
+#menu1 ul li a:hover{
+    background-color: #601085;
+    
+}
+
+/* Menú flotante  */
+
+#menu2{
+    width: 90%;
+    position: fixed;
+    z-index: 0;
+}
+
+#menu2 ul{
+    list-style: none;
+    
+}
+
+#menu2 ul li{
+    
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#menu2 ul li a{
+    
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+    text-decoration: none;
+
+    
+}
+#menu ul li a:hover{
+    background-color: #601085;
+    
+}
+
