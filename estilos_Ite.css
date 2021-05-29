@@ -1,225 +1,312 @@
-@charset "UTF-8";
-
-*{
-    margin:0px;
-    padding:0px;
-    font-family:Arial, Helvetica, sans-serif;     
-    }
-
-header {
-    
-	padding-top: 1%;
-	width:100%;
-    height: 150px;
-    background-image: url(img/headerEdix.png);
-    background-size:cover;
-    z-index: 3;
-    position: relative;
-    
-}
-	
-main {
-    margin-left:auto;
-	margin-right:auto;
-	width:90%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); 
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif; 
 } 
 
-section {
-    margin-left:auto;
-	margin-right:auto;
-	width:90%;
-    height:100%;
-    background-image: url(img/fondoEdix.png);  
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size:cover;
-}
-    
-footer {
-    width: 100%;
-    height: 170px;
-    background-image: url(img/headerEdix.png);
-    background-size:cover; 
-    color: #fff;
-    text-align: center;
-    
+body{ 
+  background: rgb(255, 255, 255); 
+  min-height: 200vh;
 }
 
-a:link {
-    color: rgb(147, 89, 241);
+.content{
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.content2{
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+header{ 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  transition: 0.6s; 
+  padding: 40px 100px; 
+  z-index: 100000;
+  overflow: visible;
+  font-weight: bold;
 } 
 
-h1 {
-    color: #fff;
+.header .logo{
+  transition: 0.6s; 
 }
 
-h3 {
-    color: rgb(19, 195, 248);
+/*LISTAS----------------------------------------------------------------*/
+header ul{ 
+  position: relative; 
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+} 
+
+header ul li{
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;  
 }
 
-#head1 {
-    margin-top:2%;
-    margin-left:5%;
-	margin-bottom:1%;
-    float: left;
+header ul li a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
 }
 
-#head2 {
-    margin-top:3%;
-    margin-right:20%;
-	margin-bottom:1%;
-    float: right;
+header ul li a:hover{
+  border-bottom: 2px solid rgb(104, 4, 109);
+  
+}
+
+header ul li:hover,
+header ul li:focus-within {
+  cursor: pointer;
+}
+
+header ul li:focus-within a {
+  background:#fff;
+  outline: none;
+}
+
+header ul li ul{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.6s ease;
+  margin-top: 1rem; /*AQUI!!!!!!!!!!*/
+  left: 0;
+  display: none;
+}
+
+header ul li:hover > ul,
+ul li ul:hover{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+header ul li ul li{
+  clear:both;
+  width: 100%;
+}
+/*FIN LISTAS----------------------------------------------------------------*/
+
+/*STICKY----------------------------------------------------------------*/
+header.sticky{ 
+  padding: 2px 100px; 
+  background:rgb(242, 242, 242);
+}
+
+header.sticky ul li a{
+  color: #000;
+}
+
+header.sticky ul li ul li{
+  background:rgb(242, 242, 242);
 }
 
 
-table {
-    font-weight: bold;
-    font-size: larger;
-    width: 40%;
-    margin:10px auto;
-    margin-left:auto;
-	margin-right:auto;
-    margin-top: 10px;
-    text-align: center ;
-    margin-bottom: 30px;
-    
+/*FIN STICKY----------------------------------------------------------------*/
+
+
+
+/*BANNER----------------------------------------------------------------*/
+.banner{ 
+  position: relative; 
+  width: 100%; 
+  height: 100vh; 
+  background: url(chica_estudiando-1.jpg); 
+  background-size: cover; 
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid  rgb(19, 195, 248);
- }
+.contenido_banner {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: 23%;
+  transform: translate(-50%, -50%);
+ 
+  color: #fff;
+}
+/*FIN BANNER----------------------------------------------------------------*/
 
- th {
-    
-    background-color: rgb(168, 165, 165);
- }
- td {
-    
-    background-color: rgb(255, 255, 255);
- }
+/*----------------------------------------------------------------------------------------------------------------------
+STYLE DE FORMULARIO*/
 
- caption {
-    margin-top: 20px; 
-    padding: 0.3em;
-    color: rgb(5, 5, 5);
-    background: rgb(19, 195, 248);
+.contenedor{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
- }     
-
- ol {
-
-    color:white;
- }
-
+/* Clase de "section" creada, para no alterar original*/
+.section_formulario{
+  border: 0px solid #903;
+  color:rgb(0, 0, 0);
+  text-align: left;
+  width: 600px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: auto;
+}
+  
 input[type=text], select, textarea {
-    
-    font-size: 15px;
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box; 
-    margin-top: 5px;
-    margin-bottom: 12px;
-    background-color:  rgb(184, 185, 185);
+  font-size: 12px;  /* Tamaño de fuente */
+  width: 100%; /* Tamaño completo */
+  padding: 5px; /* Padding */ 
+  box-sizing: border-box; /* Para asegurar que el padding y ancho esten en sus sitio */
+  margin-top: 5px; /* Margen en la parte de arriba */
+  margin-bottom: 12px; /* Margen en la parte de abajo */
+  resize: vertical /* Para ajustar el tamaño (solo en vertical) de "textarea" */
 }
-      
+    
+  /* Style de boton "Enviar" */
 input[type=submit] {
-    background-color: #903;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: rgb(115, 11, 141); /* Color de fondo del boton */
+  color: white; /* Color de fuente */
+  padding: 12px 20px; /* Padding boton */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Redondear bordes */
+  cursor: pointer; /* El cursor actua como "apuntador" (pointer), indica un enlace */
 }
-      
+    
+  /* Style de hover sobre boton "Enviar" (cuando mueves el raton sobre el boton, cambia un color más oscuro */
 input[type=submit]:hover {
-    background-color: rgb(32, 90, 39);
+  background-color: rgb(81, 7, 99);
 }
-      
-   
+
 .contenedor_formulario {
-    border: 5px solid rgb(5, 32, 119);
-    color:rgb(92, 6, 109);
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 20px;
-    background-image: url(img/fondoEdix2.png);
-    background-size:contain;  
-    padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #f2f2f2; /* Color de fondo del contenedor del formulario */
+  padding: 12px;
 }
 
-
-/* Menú alargado en nav */
-
-#menu1{
-    width: 100%;
-    z-index: 2;
-       
+  /* Style de "label" (etiqueta) */
+.label{
+  font-size: 15px;
 }
 
-#menu1 ul{
-    list-style: none;
-    position: relative;
+.img-consulta{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* FIN - STYLE DE FORMULARIO ----------------------------------------------------------------*/
+
+/* FOOTER ----------------------------------------------------------------*/
+footer {
+  clear: both;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  
+}
+.logo-footer{
+  width: 100px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenido-footer{
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
 }
 
-#menu1 ul li{
-    
-    float: left;
-    width: 20%;
-    text-align: center;
+.sociales{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
-#menu1 ul li a{
-    
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-weight: bold;
-    color: white;
-    background: #000000;
-    text-decoration: none;
-
-    
-}
-#menu1 ul li a:hover{
-    background-color: #601085;
-    
+.sociales li{
+  margin: 0 10px;
 }
 
-/* Menú flotante  */
-
-#menu2{
-    width: 90%;
-    position: fixed;
-    z-index: 0;
+.sociales a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-#menu2 ul{
-    list-style: none;
-    
+.sociales a{
+  font-size: 1.1rem;
+  transition: color .3s ease;
 }
 
-#menu2 ul li{
-    
-    float: left;
-    width: 20%;
-    text-align: center;
+.sociales a:hover i{
+  color: rgb(99, 5, 123);
+}
+/* FIN FOOTER ----------------------------------------------------------------*/
+
+/* TABLAS ----------------------------------------------------------------*/
+
+.contenido_banner a{
+  color:blueviolet;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-#menu2 ul li a{
-    
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-weight: bold;
-    color: white;
-    background: #000000;
-    text-decoration: none;
-
-    
+.tabla1{
+  border-collapse: collapse;
 }
-#menu ul li a:hover{
-    background-color: #601085;
-    
+.tabla1 th, td{
+  padding: 10px;
+  text-align: left;
+}
+.tabla2{
+  border-collapse: collapse;
+}
+.tabla2 th, td{
+  padding: 10px;
+  text-align: left;
 }
 
+.float_izq{
+  width: 50%;
+  float: left
+}
+.float_der{
+  width: 50%;
+  float: right;
+}
+
+/* FIN TABLAS ----------------------------------------------------------------*/
+
+.lista{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; 
+}
