@@ -43,8 +43,9 @@
 
                 <section class="content">
                       <div class="tabla_grados">
-                        <h3>Formación Profesional</h3>
+                        
                         <table class="tabla1" border="1">
+                            <caption>Formación profesional</caption>
                         <tr>
                             <th></th>
                             <th>Ciclos formativos</th>
@@ -66,8 +67,8 @@
                 <section class="content2">        
                     <div class="tabla_info">    
                         <div class="float_izq">
-                            <h3>Profesores</h3>
                             <table class="tabla2" border="1">
+                                <caption>Profesores</caption>
                                 <tr>
                                     <th>ID</th>
                                     <th>Nombre</th>
@@ -83,7 +84,7 @@
                         
                         <div class="float_der">
                             <table class="tabla2" border="1">
-                                <h3>Dirrecion</h3>
+                                <caption>Direccion</caption>
                                 <thead>
                                     <tr>
                                         <th>Nombre</th>

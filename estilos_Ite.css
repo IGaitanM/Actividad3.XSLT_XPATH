@@ -310,3 +310,38 @@ footer {
   justify-content: center;
   margin-bottom: 30px; 
 }
+
+table {
+  font-weight: bold;
+  font-size: larger;
+  width: 40%;
+  margin:10px auto;
+  margin-left:auto;
+margin-right:auto;
+  margin-top: 10px;
+  text-align: center ;
+  margin-bottom: 30px;
+  
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid  rgb(19, 195, 248);
+}
+
+th {
+  
+  background-color: rgb(168, 165, 165);
+}
+td {
+  
+  background-color: rgb(255, 255, 255);
+}
+
+caption {
+  margin-top: 20px; 
+  padding: 0.3em;
+  color: rgb(5, 5, 5);
+  background: rgb(19, 195, 248);
+
+}     
